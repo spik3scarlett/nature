@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'health_assessment#pytania'
   get '/ankieta', to: 'health_assessment#pytania'
   post '/ankieta', to: 'health_assessment#create'
   get '/ankieta2', to: 'health_assessment#pytania2'
@@ -8,5 +9,5 @@ Rails.application.routes.draw do
   get '/ankieta4', to: 'health_assessment#pytania4'
   post '/ankieta4', to: 'health_assessment#wynik'
   get '/wynik', to: 'health_assessment#wynik'
-  
+
 end
