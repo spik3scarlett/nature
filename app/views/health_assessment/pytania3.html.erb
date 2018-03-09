@@ -1,6 +1,8 @@
-<h1>Krok 3: Zdrowie i witalność</h1>
+<div class="text-center"><h1> Ankieta witalności </h1>
 
-Zaznacz wszystkie, które cię dotyczą:
+<div class="container"><h2 class="text-success"> Krok 3: Zdrowie i witalność </h2>
+<div class="jumbotron">
+<h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 
 <%= form_for :zdrowie do |f| %>
   Choroba częściej niż dwa razy w roku <%= f.check_box :choroby %><br />
@@ -27,8 +29,10 @@ Zaznacz wszystkie, które cię dotyczą:
   Zimne ręce lub stopy <%= f.check_box :zimno %><br />
   Duszności <%= f.check_box :dusznosc %><br />
   Nawracające zakażenia grzybicze lub drożdżakowe <%= f.check_box :zakazenia %><br />
+<br/>
 
-  
-          
   <%= f.submit("Dalej") %>
 <% end %>
+</div>
+</div>
+</div>

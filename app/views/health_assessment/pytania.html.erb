@@ -1,7 +1,8 @@
-<h1> Krok 1: Emocje i umysł </h1>
+<div class="text-center"><h1> Ankieta witalności </h1>
 
-Zaznacz wszystkie, które cię dotyczą:
-
+<div class="container"><h2 class="text-success"> Krok 1: Emocje i umysł </h2>
+<div class="jumbotron">
+<h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 <%= form_for :zdrowie do |f| %>
   Dużo stresu w życiu <%= f.check_box :stres %><br />
   Słaba pamięć, koncentracja <%= f.check_box :poznawcze  %><br />
@@ -9,11 +10,9 @@ Zaznacz wszystkie, które cię dotyczą:
   Codziennie się zamartwiam, czuję lęk <%= f.check_box :lek  %><br />
   Mam doła, nic mnie nie cieszy <%= f.check_box :depresja  %><br />
   Łatwo się irytuję, wpadam w złość <%= f.check_box :dysforia  %><br />
-          
+  <br/>
   <%= f.submit("Dalej") %>
 <% end %>
-
-
-
-
-  
+</div>
+</div>
+</div>

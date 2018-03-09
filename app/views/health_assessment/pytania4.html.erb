@@ -1,7 +1,8 @@
-<h1>Krok 4: Dieta i jej wpływ</h1>
+<div class="text-center"><h1> Ankieta witalności </h1>
 
-Zaznacz wszystkie, które cię dotyczą:
-
+<div class="container"><h2 class="text-success"> Krok 4: Dieta i jej wpływ </h2>
+<div class="jumbotron">
+<h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 
 <%= form_for :zdrowie do |f| %>
   Problemy z trawieniem <%= f.check_box :trawienie %><br />
@@ -15,6 +16,9 @@ Zaznacz wszystkie, które cię dotyczą:
   Często białe pieczywo, makarony, potrawy mączne <%= f.check_box :maka %><br />
   Codziennie napoje z kofeiną <%= f.check_box :kofeina  %><br />
   Smażone potrawy częściej niż 3 razy w tygodniu <%= f.check_box :smazone  %><br />
-          
+
   <%= f.submit("Dalej") %>
 <% end %>
+</div>
+</div>
+</div>

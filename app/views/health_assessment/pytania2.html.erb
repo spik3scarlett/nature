@@ -1,7 +1,8 @@
-<h1>Krok 2: Środowisko, leki</h1>
+<div class="text-center"><h1> Ankieta witalności </h1>
 
-Zaznacz wszystkie, które cię dotyczą:
-
+<div class="container"><h2 class="text-success"> Krok 2: Środowisko, leki </h2>
+<div class="jumbotron">
+<h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 
 <%= form_for :zdrowie do |f| %>
   Palenie  papierosów <%= f.check_box :tyton %><br />
@@ -13,6 +14,9 @@ Zaznacz wszystkie, które cię dotyczą:
   Używam regularnie środków do czyszczenia ze sklepu <%= f.check_box :cleaners  %><br />
   Używam regularnie środków higieny osobistej ze sklepu <%= f.check_box :mydlo  %><br />
   Rzadko ćwiczę, aktywność fizyczna słaba <%= f.check_box :aktywnosc %><br />
-          
+
   <%= f.submit("Dalej") %>
 <% end %>
+</div>
+</div>
+</div>
