@@ -1,0 +1,18 @@
+<h1>Krok 2: Środowisko, leki</h1>
+
+Zaznacz wszystkie, które cię dotyczą:
+
+
+<%= form_for :zdrowie do |f| %>
+  Palenie  papierosów <%= f.check_box :tyton %><br />
+  Smog, zanieczyszczenia <%= f.check_box :smog  %><br />
+  Często biorę leki bez recepty, np. przeciwbólowe <%= f.check_box :otc  %><br />
+  Niedawno zakończone antybiotyki <%= f.check_box :atb  %><br />
+  Przewlekle biorę leki na receptę <%= f.check_box :rx  %><br/>
+  Chlorowana woda do picia <%= f.check_box :woda  %><br />
+  Używam regularnie środków do czyszczenia ze sklepu <%= f.check_box :cleaners  %><br />
+  Używam regularnie środków higieny osobistej ze sklepu <%= f.check_box :mydlo  %><br />
+  Rzadko ćwiczę, aktywność fizyczna słaba <%= f.check_box :aktywnosc %><br />
+          
+  <%= f.submit("Dalej") %>
+<% end %>

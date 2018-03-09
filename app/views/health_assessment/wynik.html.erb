@@ -1,0 +1,98 @@
+<h1>Twoje wyniki personalnej ankiety zdrowotnej</h1>
+
+<div>
+    <h2> Układ pokarmowy </h2>    
+    <p>Możliwe, że stan układu pokarmowego masz...</p>
+    
+    <h3><%= wydaj_ocene($parametry[:pokarmowy]) %></h3>
+    <%= image_tag("diagram-digestive.png", :alt => "układ pokarmowy", class: 'img-responsive') %>
+    
+</div>
+
+<div>
+    <h2> Skład ciała </h2>    
+    <p>Możliwe, że skład twojego ciała jest...</p>
+    
+    <h3><%= wydaj_ocene($parametry[:sklad_ciala]) %></h3>
+    <%= image_tag("diagram-body_composition.png", :alt => "skład ciała", class: 'img-responsive') %>
+    
+</div>
+<div>
+    <h2> Układ krążenia </h2>    
+    <p>Możliwe, że stan układu krążenia masz...</p>
+   
+    <h3> <%= wydaj_ocene($parametry[:kardio]) %></h3>
+    <%= image_tag("diagram-circulatory.png", :alt => "układ krążenia", class: 'img-responsive') %>
+    
+</div>
+
+<div>
+    <h2> Detox </h2>    
+    <p>Możliwe, że stan funkcji oczyszczania jest...</p>
+    
+    <h3><%= wydaj_ocene($parametry[:oczyszczanie]) %></h3>
+    <%= image_tag("diagram-detox.png", :alt => "układ oczyszczania", class: 'img-responsive') %>
+    
+</div>
+<div>
+    <h2> Układ gruczołowy </h2>    
+    <p>Możliwe, że stan układu krążenia masz...</p>
+   
+    <h3> <%= wydaj_ocene($parametry[:gruczolowy]) %></h3>
+    <%= image_tag("diagram-digestive.png", :alt => "układ pokarmowy", class: 'img-responsive') %>
+    
+</div>
+<div>
+    <h2> Wątroba </h2>    
+    <p>Możliwe, że stan wątroby masz...</p>
+   
+    <h3> <%= wydaj_ocene($parametry[:watroba]) %></h3>
+    <%= image_tag("diagram-hepatic.png", :alt => "wątroba", class: 'img-responsive') %>
+    
+</div>
+<div>
+    <h2> Układ odpornościowy </h2>    
+    <p>Możliwe, że stan twojej odporności jest...</p>
+   
+    <h3> <%= wydaj_ocene($parametry[:immune]) %></h3>
+    <%= image_tag("diagram-immune.png", :alt => "układ immunologiczny", class: 'img-responsive') %>
+    
+</div>
+<div>
+    <h2> Układ nerwowy </h2>    
+    <p>Możliwe, że stan układu nerwowego masz...</p>
+   
+    <h3> <%= wydaj_ocene($parametry[:nerwowy]) %></h3>
+    <%= image_tag("diagram-nervous.png", :alt => "układ nerwowy", class: 'img-responsive') %>
+    
+</div>
+<div>
+    <h2> Układ oddechowy </h2>    
+    <p>Możliwe, że stan układu oddechowego masz...</p>
+    
+    <h3><%= wydaj_ocene($parametry[:oddechowy]) %></h3>
+    <%= image_tag("diagram-respiratory.png", :alt => "układ oddechowy", class: 'img-responsive') %>
+    
+</div>
+
+<div>
+    <h2> Układ kostno-stawowy </h2>    
+    <p>Możliwe, że stan układu mięśniowo-szkieletowego masz...</p>
+    
+    <h3><%= wydaj_ocene($parametry[:ruchu]) %></h3>
+    <%= image_tag("diagram-structural.png", :alt => "układ mięśniowo-szkieletowy", class: 'img-responsive') %>
+    
+</div>
+
+<div>
+    <h2> Układ moczowy </h2>    
+    <p>Możliwe, że stan układu moczowego masz...</p>
+    
+    <h3<%= wydaj_ocene($parametry[:moczowy]) %></h3>
+    <%= image_tag("diagram-urinary.png", :alt => "układ moczowy", class: 'img-responsive') %>
+    
+</div>
+
+Oto $record
+<%= $record.inspect %>
+

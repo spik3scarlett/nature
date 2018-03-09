@@ -1,0 +1,20 @@
+<h1>Krok 4: Dieta i jej wpływ</h1>
+
+Zaznacz wszystkie, które cię dotyczą:
+
+
+<%= form_for :zdrowie do |f| %>
+  Problemy z trawieniem <%= f.check_box :trawienie %><br />
+  Regularnie alkohol <%= f.check_box :alkohol  %><br />
+  Alergia na pokarmy <%= f.check_box :alergia %><br />
+  Często słodycze <%= f.check_box :slodycze  %><br />
+  Brzydki zapach ciała lub zapach z ust <%= f.check_box :zapach  %>
+  Mniej niż 3 porcje warzyw lub owoców dziennie <%= f.check_box :owoce  %><br />
+  Nadmierne odbijanie lub gazy po posiłkach <%= f.check_box :gaz  %><br />
+  Codziennie nabiał <%= f.check_box :nabial  %><br />
+  Często białe pieczywo, makarony, potrawy mączne <%= f.check_box :maka %><br />
+  Codziennie napoje z kofeiną <%= f.check_box :kofeina  %><br />
+  Smażone potrawy częściej niż 3 razy w tygodniu <%= f.check_box :smazone  %><br />
+          
+  <%= f.submit("Dalej") %>
+<% end %>

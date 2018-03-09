@@ -1,0 +1,19 @@
+<h1> Krok 1: Emocje i umysł </h1>
+
+Zaznacz wszystkie, które cię dotyczą:
+
+<%= form_for :zdrowie do |f| %>
+  Dużo stresu w życiu <%= f.check_box :stres %><br />
+  Słaba pamięć, koncentracja <%= f.check_box :poznawcze  %><br />
+  Często się budzę, nie wysypiam się <%= f.check_box :sen  %><br />
+  Codziennie się zamartwiam, czuję lęk <%= f.check_box :lek  %><br />
+  Mam doła, nic mnie nie cieszy <%= f.check_box :depresja  %><br />
+  Łatwo się irytuję, wpadam w złość <%= f.check_box :dysforia  %><br />
+          
+  <%= f.submit("Dalej") %>
+<% end %>
+
+
+
+
+  
