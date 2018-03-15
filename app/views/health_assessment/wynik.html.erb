@@ -1,109 +1,135 @@
 <%= przelicz_parametry %>
-<div class="container"><h1 class="text-center"> Twoje wyniki personalnej ankiety witalności </h1>
+<div class="container">
+<div class="m-3"><h1 class="text-center">Twoje wyniki personalnej ankiety witalności </h1></div>
 
 <div class="row">
-  <div class="container border border-secondary col-sm-6">
-      <h2  class="text-success"> Układ pokarmowy </h2>
-      <p class="text-muted">Możliwe, że stan układu pokarmowego masz...</p>
 
-      <h3><%= wydaj_ocene($parametry[:pokarmowy]) %></h3>
-      <%= image_tag("diagram-digestive.png", :alt => "układ pokarmowy", class: 'img-responsive') %>
+  <div class="col-sm-6">
+  <div class="container border border-secondary m-1 p-2">
+      <h2 class="text-success"> Układ pokarmowy </h2>
+      <p class="text-muted">Można podejrzewać, że twój stan układu pokarmowego jest...</p>
+      <h3 class="text-success"><%= wydaj_ocene($parametry[:pokarmowy]) %></h3>
+      <%= image_tag("diagram-digestive.png", :alt => "układ pokarmowy", class: 'img-fluid') %>
       <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
   </div>
+</div>
 
-  <div class="container border border-secondary col-sm-6">
-      <h2  class="text-success"> Skład ciała </h2>
-      <p class="text-muted">Możliwe, że skład twojego ciała jest...</p>
-
-      <h3><%= wydaj_ocene($parametry[:sklad_ciala]) %></h3>
-      <%= image_tag("diagram-body_composition.png", :alt => "skład ciała", class: 'img-responsive') %>
-       <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
+  <div class="col-sm-6">
+  <div class="container border border-secondary m-1 p-2">
+      <h2 class="text-success"> Energia i kompozycja ciała</h2>
+      <p class="text-muted">Można podejrzewać, że twój poziom energii i kompozycji ciała jest...</p>
+      <h3 class="text-success"><%= wydaj_ocene($parametry[:sklad_ciala]) %></h3>
+      <%= image_tag("diagram-body_composition.png", :alt => "energia i kompozycja ciała", class: 'img-fluid') %>
+     <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
   </div>
 </div>
+</div>
+
 <div class="row">
-  <div class="container border border-secondary col-sm-6">
+  <div class="col-sm-6">
+  <div class="container border border-secondary m-1 p-2">
       <h2  class="text-success"> Układ krążenia </h2>
-      <p class="text-muted">Możliwe, że stan układu krążenia masz...</p>
-
-      <h3> <%= wydaj_ocene($parametry[:kardio]) %></h3>
-      <%= image_tag("diagram-circulatory.png", :alt => "układ krążenia", class: 'img-responsive') %>
-  <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
+      <p class="text-muted">Można podejrzewać, że twój stan układu krążenia jest...</p>
+      <h3 class="text-success"> <%= wydaj_ocene($parametry[:kardio]) %></h3>
+      <%= image_tag("diagram-circulatory.png", :alt => "układ krążenia", class: 'img-fluid') %>
+    <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
+    </div>
   </div>
 
-  <div class="container border border-secondary col-sm-6">
+  <div class="col-sm-6">
+  <div class="container border border-secondary m-1 p-2">
       <h2  class="text-success"> Detox </h2>
-      <p class="text-muted">Możliwe, że stan funkcji oczyszczania jest...</p>
-
-      <h3><%= wydaj_ocene($parametry[:oczyszczanie]) %></h3>
-      <%= image_tag("diagram-detox.png", :alt => "układ oczyszczania", class: 'img-responsive') %>
+      <p class="text-muted">Można podejrzewać, że stan twoich funkcji oczyszczających jest...</p>
+      <h3 class="text-success"><%= wydaj_ocene($parametry[:oczyszczanie]) %></h3>
+      <%= image_tag("diagram-detox.png", :alt => "układ oczyszczania", class: 'img-fluid') %>
   <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
+  </div>
   </div>
 </div>
-<div class="row">
-  <div class="container border border-secondary col-sm-6">
-      <h2  class="text-success"> Układ gruczołowy </h2>
-      <p class="text-muted">Możliwe, że stan układu krążenia masz...</p>
 
-      <h3> <%= wydaj_ocene($parametry[:gruczolowy]) %></h3>
-      <%= image_tag("diagram-digestive.png", :alt => "układ pokarmowy", class: 'img-responsive') %>
+<div class="row">
+  <div class="col-sm-6">
+  <div class="container border border-secondary m-1 p-2">
+      <h2  class="text-success"> Układ endokrynny </h2>
+      <p class="text-muted">Można podejrzewać, że stan twojego układu endokrynnego jest...</p>
+
+      <h3 class="text-success"> <%= wydaj_ocene($parametry[:gruczolowy]) %></h3>
+      <%= image_tag("diagram-glandular.png", :alt => "układ gruczołowy", class: 'img-fluid') %>
   <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
   </div>
-  <div class="container border border-secondary col-sm-6">
+  </div>
+
+  <div class="col-sm-6">
+  <div class="container border border-secondary m-1 p-2">
       <h2  class="text-success"> Wątroba </h2>
-      <p class="text-muted">Możliwe, że stan wątroby masz...</p>
+      <p class="text-muted">Można podejrzewać, że stan twojej wątroby jest...</p>
 
-      <h3> <%= wydaj_ocene($parametry[:watroba]) %></h3>
-      <%= image_tag("diagram-hepatic.png", :alt => "wątroba", class: 'img-responsive') %>
+      <h3 class="text-success"> <%= wydaj_ocene($parametry[:watroba]) %></h3>
+      <%= image_tag("diagram-hepatic.png", :alt => "wątroba", class: 'img-fluid') %>
   <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
+  </div>
   </div>
 </div>
 
 <div class="row">
-  <div class="container border border-secondary col-sm-6">
+  <div class="col-sm-6">
+  <div class="container border border-secondary m-1 p-2">
       <h2  class="text-success"> Układ odpornościowy </h2>
       <p class="text-muted">Możliwe, że stan twojej odporności jest...</p>
 
-      <h3> <%= wydaj_ocene($parametry[:immune]) %></h3>
-      <%= image_tag("diagram-immune.png", :alt => "układ immunologiczny", class: 'img-responsive') %>
+      <h3 class="text-success"> <%= wydaj_ocene($parametry[:immune]) %></h3>
+      <%= image_tag("diagram-immune.png", :alt => "układ immunologiczny", class: 'img-fluid') %>
   <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
   </div>
-  <div class="container border border-secondary col-sm-6">
-      <h2  class="text-success"> Układ nerwowy </h2>
-      <p class="text-muted">Możliwe, że stan układu nerwowego masz...</p>
+  </div>
 
-      <h3> <%= wydaj_ocene($parametry[:nerwowy]) %></h3>
-      <%= image_tag("diagram-nervous.png", :alt => "układ nerwowy", class: 'img-responsive') %>
+  <div class="col-sm-6">
+  <div class="container border border-secondary m-1 p-2">
+      <h2  class="text-success"> Układ nerwowy </h2>
+      <p class="text-muted">Można podejrzewać, że stan twojego układu nerwowego jest...</p>
+
+      <h3 class="text-success"> <%= wydaj_ocene($parametry[:nerwowy]) %></h3>
+      <%= image_tag("diagram-nervous.png", :alt => "układ nerwowy", class: 'img-fluid') %>
   <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
+  </div>
   </div>
 </div>
 
 <div class="row">
-  <div class="container border border-secondary col-sm-6">
+  <div class="col-sm-6">
+  <div class="container border border-secondary m-1 p-2">
       <h2  class="text-success"> Układ oddechowy </h2>
-      <p class="text-muted">Możliwe, że stan układu oddechowego masz...</p>
+      <p class="text-muted">Można podejrzewać, że stan twojego układu oddechowego jest...</p>
 
-      <h3><%= wydaj_ocene($parametry[:oddechowy]) %></h3>
-      <%= image_tag("diagram-respiratory.png", :alt => "układ oddechowy", class: 'img-responsive') %>
+      <h3 class="text-success"><%= wydaj_ocene($parametry[:oddechowy]) %></h3>
+      <%= image_tag("diagram-respiratory.png", :alt => "układ oddechowy", class: 'img-fluid') %>
   <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
   </div>
+  </div>
 
-  <div class="container border border-secondary col-sm-6">
+  <div class="col-sm-6">
+  <div class="container border border-secondary m-1 p-2">
       <h2  class="text-success"> Układ kostno-stawowy </h2>
-      <p class="text-muted">Możliwe, że stan układu mięśniowo-szkieletowego masz...</p>
+      <p class="text-muted">Można podejrzewać, że stan twojego układu kostno-stawowego jest...</p>
 
-      <h3><%= wydaj_ocene($parametry[:ruchu]) %></h3>
-      <%= image_tag("diagram-structural.png", :alt => "układ mięśniowo-szkieletowy", class: 'img-responsive') %>
+      <h3 class="text-success"><%= wydaj_ocene($parametry[:ruchu]) %></h3>
+      <%= image_tag("diagram-structural.png", :alt => "układ mięśniowo-szkieletowy", class: 'img-fluid') %>
   <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
+  </div>
   </div>
 </div>
 
-<div class="container border border-secondary">
-    <h2 class="text-success"> Układ moczowy </h2>
-    <p class="text-muted">Możliwe, że stan układu moczowego masz...</p>
+<div class="row">
+  <div class="col-sm-6">
+  <div class="container border border-secondary m-1 p-2">
+      <h2 class="text-success"> Układ moczowy </h2>
+      <p class="text-muted"> Można podejrzewać, że stan twojego układu moczowego jest...</p>
 
-  <h3><%= wydaj_ocene($parametry[:moczowy]) %></h3>
-    <%= image_tag("diagram-urinary.png", :alt => "układ moczowy", class: 'img-responsive') %>
-  <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
+    <h3 class="text-success"><%= wydaj_ocene($parametry[:moczowy]) %></h3>
+      <%= image_tag("diagram-urinary.png", :alt => "układ moczowy", class: 'img-fluid') %>
+    <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
+  </div>
+  </div>
 </div>
 
 </div>

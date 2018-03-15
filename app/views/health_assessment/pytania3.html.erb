@@ -1,34 +1,21 @@
 <div class="text-center"><h1> Ankieta witalności </h1>
 
-<div class="container"><h2 class="text-success"> Krok 3: Zdrowie i witalność </h2>
+<div class="container"><h2 class="text-success"> Krok 3: Styl życia i dieta </h2>
 <div class="jumbotron">
 <h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 
 <%= form_for :zdrowie do |f| %>
-  Choroba częściej niż dwa razy w roku <%= f.check_box :choroby %><br />
-  Comiesięczne problemy kobiece <%= f.check_box :kobiece  %><br />
-  Duży nalot na języku <%= f.check_box :nalot  %><br />
-  Problemy z dziąsłami <%= f.check_box :dziasla  %><br />
-  Obrzeki pod oczami <%= f.check_box :oczy  %><br/>
-  Problemy ze skórą lub cerą <%= f.check_box :skora  %><br />
-  Bezsenność <%= f.check_box :bezsennosc  %><br />
-  Problemy związane z menopauzą <%= f.check_box :menopauza  %><br />
-  Problemy starości <%= f.check_box :starosc %><br />
-  Trudność utrzymywania idealnej wagi <%= f.check_box :waga  %><br />
-  Zaparcia <%= f.check_box :zaparcia  %><br />
-  Słabe libido <%= f.check_box :libido %><br />
-  Kurcze mięśniowe <%= f.check_box :kurcze %><br />
-  Słabe kości, zęby lub chrząstki <%= f.check_box :kosci %><br />
-  Problemy oddechowe <%= f.check_box :oddechy %><br />
-  Problemy z układem moczowym <%= f.check_box :mocz %><br />
-  Bóle stawów <%= f.check_box :stawy %><br />
-  Brak energii lub wytrzymałości <%= f.check_box :energia %><br />
-  Dużo śluzu lub uczucie zatkania <%= f.check_box :wlosy %><br />
-  Słabe kolana, kostki lub problemy z krzyżem <%= f.check_box :krzyz %><br />
-  Kruche lub łamliwe paznokcie <%= f.check_box :paznokcie %><br />
-  Zimne ręce lub stopy <%= f.check_box :zimno %><br />
-  Duszności <%= f.check_box :dusznosc %><br />
-  Nawracające zakażenia grzybicze lub drożdżakowe <%= f.check_box :zakazenia %><br />
+  Niewystarczająca aktywność fizyczna, siedzący tryb życia <%= f.check_box :aktywnosc %><br />
+  Mniej niż 3 porcje warzyw lub owoców dziennie <%= f.check_box :owoce  %><br />
+  Pociąg do słodyczy <%= f.check_box :cukier %><br />
+  Nadużywanie alkoholu <%= f.check_box :alkohol %><br />
+  Często białe pieczywo, makarony, potrawy mączne <%= f.check_box :maka %><br />
+  Częste spożywanie czerwonego mięsa <%= f.check_box :mieso %><br />
+  Nadmiar nabiału w diecie <%= f.check_box :nabial %><br />
+  Pokarmy tłuste lub smażone <%= f.check_box :tłuszcz %><br />
+  Trudności w utrzymaniu prawidłowej wagi <%= f.check_box :waga %><br />
+  Nieprzestrzeganie diety <%= f.check_box :cukier %><br />
+
 <br/>
 
   <%= f.submit("Dalej") %>

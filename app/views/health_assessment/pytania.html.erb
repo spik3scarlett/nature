@@ -4,12 +4,16 @@
 <div class="jumbotron">
 <h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 <%= form_for :zdrowie do |f| %>
+  Brak energii, spadek sił <%= f.check_box :energia %><br />
   Dużo stresu w życiu <%= f.check_box :stres %><br />
-  Słaba pamięć, koncentracja <%= f.check_box :poznawcze  %><br />
-  Często się budzę, nie wysypiam się <%= f.check_box :sen  %><br />
-  Codziennie się zamartwiam, czuję lęk <%= f.check_box :lek  %><br />
-  Mam doła, nic mnie nie cieszy <%= f.check_box :depresja  %><br />
-  Łatwo się irytuję, wpadam w złość <%= f.check_box :dysforia  %><br />
+  Roztargnienie, słaba pamięć lub koncentracja <%= f.check_box :poznawcze  %><br />
+  Strach i lęk <%= f.check_box :lek  %><br />
+  Częste obniżenia nastroju, dół, brak radości <%= f.check_box :depresja  %><br />
+  Łatwo się irytuję, wpadam w złość, tracę kontrolę nad sobą <%= f.check_box :dysforia  %><br />
+  Bezsenność, niespokojny sen, nie wysypiam się <%= f.check_box :sen  %><br />
+  Przybicie, apatia, depresja <%= f.check_box :depresja2  %><br />
+  Utrzymujący się niepokój, zamartwianie się <%= f.check_box :lek2  %><br />
+
   <br/>
   <%= f.submit("Dalej") %>
 <% end %>

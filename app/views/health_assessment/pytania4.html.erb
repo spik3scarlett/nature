@@ -1,21 +1,25 @@
 <div class="text-center"><h1> Ankieta witalności </h1>
 
-<div class="container"><h2 class="text-success"> Krok 4: Dieta i jej wpływ </h2>
+<div class="container"><h2 class="text-success"> Krok 4: Ogólny stan witalny </h2>
 <div class="jumbotron">
 <h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 
 <%= form_for :zdrowie do |f| %>
-  Problemy z trawieniem <%= f.check_box :trawienie %><br />
-  Regularnie alkohol <%= f.check_box :alkohol  %><br />
-  Alergia na pokarmy <%= f.check_box :alergia %><br />
-  Często słodycze <%= f.check_box :slodycze  %><br />
-  Brzydki zapach ciała lub zapach z ust <%= f.check_box :zapach  %>
-  Mniej niż 3 porcje warzyw lub owoców dziennie <%= f.check_box :owoce  %><br />
-  Nadmierne odbijanie lub gazy po posiłkach <%= f.check_box :gaz  %><br />
-  Codziennie nabiał <%= f.check_box :nabial  %><br />
-  Często białe pieczywo, makarony, potrawy mączne <%= f.check_box :maka %><br />
-  Codziennie napoje z kofeiną <%= f.check_box :kofeina  %><br />
-  Smażone potrawy częściej niż 3 razy w tygodniu <%= f.check_box :smazone  %><br />
+  Częste choroby <%= f.check_box :choroby %><br />
+  Nieprzyjemny zapach ciała lub z ust <%= f.check_box :zapach %><br />
+  Dolegliwości trawienne <%= f.check_box :trawienie %><br />
+  Obrzęki pod oczami <%= f.check_box :oczy %><br />
+  Obniżona odporność <%= f.check_box :odpornosc %><br />
+  Szybkie męczenie się <%= f.check_box :zmeczenie %><br />
+  Problemy z dziąsłami, zębami <%= f.check_box :dziasla  %><br />
+  Zaparcia <%= f.check_box :zaparcia  %><br />
+  Powolna rekonwalescencja <%= f.check_box :rekonwalescencja  %><br />
+  Niska aktywność seksualna, słabe libido <%= f.check_box :libido %><br />
+  Nieregularne stolce <%= f.check_box :stolce  %><br />
+  Brak apetytu <%= f.check_box :apetyt %><br />
+
+
+<br/>
 
   <%= f.submit("Dalej") %>
 <% end %>

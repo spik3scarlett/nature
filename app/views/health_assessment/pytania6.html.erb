@@ -1,0 +1,25 @@
+<div class="text-center"><h1> Ankieta witalności </h1>
+
+<div class="container"><h2 class="text-success"> Krok 6: Zdrowie układowe, cz. 2 </h2>
+<div class="jumbotron">
+<h3>Zaznacz wszystkie, które cię dotyczą:</h3>
+
+<%= form_for :zdrowie do |f| %>
+
+  Problemy z oddychaniem, duszności <%= f.check_box :oddechy %><br />
+  Nadmiar flegmy <%= f.check_box :flegma %><br />
+  Problemy starości <%= f.check_box :starosc %><br />
+  Częste oddawanie moczu <%= f.check_box :czestomocz %><br />
+  Ból przy oddawaniu moczu   <%= f.check_box :dysuria %><br />
+  Wstawanie w nocy, by oddać mocz <%= f.check_box :nycturia %><br />
+  Obrzęki i bóle stawów, ból krzyża <%= f.check_box :stawy %><br />
+  Słabość mięśni <%= f.check_box :miesnie %><br />
+  Kruchość kości <%= f.check_box :kosci %><br />
+  Kurcze mięśniowe <%= f.check_box :kurcze %><br />
+  Nawracające grzybice <%= f.check_box :zakazenia %><br />
+  <br />
+  <%= f.submit("Dalej") %>
+<% end %>
+</div>
+</div>
+</div>

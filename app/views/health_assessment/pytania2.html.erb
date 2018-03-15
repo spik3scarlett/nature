@@ -1,19 +1,23 @@
 <div class="text-center"><h1> Ankieta witalności </h1>
 
-<div class="container"><h2 class="text-success"> Krok 2: Środowisko, leki </h2>
+<div class="container"><h2 class="text-success"> Krok 2: Środowisko, leki, chemia </h2>
 <div class="jumbotron">
 <h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 
 <%= form_for :zdrowie do |f| %>
   Palenie  papierosów <%= f.check_box :tyton %><br />
-  Smog, zanieczyszczenia <%= f.check_box :smog  %><br />
+  Smog, zanieczyszczenia powietrza, wody... <%= f.check_box :smog  %><br />
   Często biorę leki bez recepty, np. przeciwbólowe <%= f.check_box :otc  %><br />
   Niedawno zakończone antybiotyki <%= f.check_box :atb  %><br />
   Przewlekle biorę leki na receptę <%= f.check_box :rx  %><br/>
   Chlorowana woda do picia <%= f.check_box :woda  %><br />
   Używam regularnie środków do czyszczenia ze sklepu <%= f.check_box :cleaners  %><br />
-  Używam regularnie środków higieny osobistej ze sklepu <%= f.check_box :mydlo  %><br />
-  Rzadko ćwiczę, aktywność fizyczna słaba <%= f.check_box :aktywnosc %><br />
+  Nadwrażliwość na chemikalia, artykuły spożywcze <%= f.check_box :chemia  %><br />
+  Alergia na pokarmy <%= f.check_box :alergia %><br />
+  Alergia na substancje w powietrzu <%= f.check_box :wziewne %><br />
+
+
+  <br/>
 
   <%= f.submit("Dalej") %>
 <% end %>
