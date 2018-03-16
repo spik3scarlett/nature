@@ -1,22 +1,22 @@
 <div class="text-center"><h1> Ankieta witalności </h1>
 
-<div class="container"><h2 class="text-success"> Krok 4: Ogólny stan witalny </h2>
-<div class="jumbotron">
+<div class="container"><h2 class="text-center text-success"> Krok 4: Ogólny stan witalny </h2>
+<div class="jumbotron text-left">
 <h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 
 <%= form_for :zdrowie do |f| %>
-  Częste choroby <%= f.check_box :choroby %><br />
-  Nieprzyjemny zapach ciała lub z ust <%= f.check_box :zapach %><br />
-  Dolegliwości trawienne <%= f.check_box :trawienie %><br />
-  Obrzęki pod oczami <%= f.check_box :oczy %><br />
-  Obniżona odporność <%= f.check_box :odpornosc %><br />
-  Szybkie męczenie się <%= f.check_box :zmeczenie %><br />
-  Problemy z dziąsłami, zębami <%= f.check_box :dziasla  %><br />
-  Zaparcia <%= f.check_box :zaparcia  %><br />
-  Powolna rekonwalescencja <%= f.check_box :rekonwalescencja  %><br />
-  Niska aktywność seksualna, słabe libido <%= f.check_box :libido %><br />
-  Nieregularne stolce <%= f.check_box :stolce  %><br />
-  Brak apetytu <%= f.check_box :apetyt %><br />
+  <%= f.check_box :choroby %> Częste choroby <br />
+  <%= f.check_box :zapach %> Nieprzyjemny zapach ciała lub z ust <br />
+  <%= f.check_box :trawienie %> Dolegliwości trawienne <br />
+  <%= f.check_box :oczy %> Obrzęki pod oczami <br />
+  <%= f.check_box :odpornosc %> Obniżona odporność <br />
+  <%= f.check_box :zmeczenie %> Szybkie męczenie się <br />
+  <%= f.check_box :dziasla  %> Problemy z dziąsłami, zębami <br />
+  <%= f.check_box :zaparcia  %> Zaparcia <br />
+  <%= f.check_box :rekonwalescencja  %> Powolna rekonwalescencja <br />
+  <%= f.check_box :libido %> Niska aktywność seksualna, słabe libido <br />
+  <%= f.check_box :stolce  %> Nieregularne stolce <br />
+  <%= f.check_box :apetyt %> Brak apetytu <br />
 
 
 <br/>

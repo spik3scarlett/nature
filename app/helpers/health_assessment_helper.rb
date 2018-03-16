@@ -72,7 +72,7 @@ module HealthAssessmentHelper
     if $record[:kosci] == "1" then $parametry[:ruchu] -= 1 && $parametry[:gruczolowy] -= 1  end
     if $record[:kurcze] == "1" then $parametry[:nerwowy] -= 1  && $parametry[:energia] -= 1  && $parametry[:kardio] -= 1  end
     if $record[:zakazenia] == "1" then $parametry[:immune] -= 1 end
-    return nil  
+    return nil
   end
 
 

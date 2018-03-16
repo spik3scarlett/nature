@@ -1,18 +1,18 @@
-<div class="text-center"><h1> Ankieta witalności </h1>
+<div ><h1 class="text-center"> Ankieta witalności </h1>
 
-<div class="container"><h2 class="text-success"> Krok 1: Emocje i umysł </h2>
-<div class="jumbotron">
+<div class="container"><h2 class="text-center text-success"> Krok 1: Emocje i umysł </h2>
+<div class="jumbotron text-left">
 <h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 <%= form_for :zdrowie do |f| %>
-  Brak energii, spadek sił <%= f.check_box :energia %><br />
-  Dużo stresu w życiu <%= f.check_box :stres %><br />
-  Roztargnienie, słaba pamięć lub koncentracja <%= f.check_box :poznawcze  %><br />
-  Strach i lęk <%= f.check_box :lek  %><br />
-  Częste obniżenia nastroju, dół, brak radości <%= f.check_box :depresja  %><br />
-  Łatwo się irytuję, wpadam w złość, tracę kontrolę nad sobą <%= f.check_box :dysforia  %><br />
-  Bezsenność, niespokojny sen, nie wysypiam się <%= f.check_box :sen  %><br />
-  Przybicie, apatia, depresja <%= f.check_box :depresja2  %><br />
-  Utrzymujący się niepokój, zamartwianie się <%= f.check_box :lek2  %><br />
+  <%= f.check_box :energia %> Brak energii, spadek sił <br />
+  <%= f.check_box :stres %> Dużo stresu w życiu <br />
+  <%= f.check_box :poznawcze  %> Roztargnienie, słaba pamięć lub koncentracja <br />
+  <%= f.check_box :lek  %> Strach i lęk <br />
+  <%= f.check_box :depresja  %> Częste obniżenia nastroju, dół, brak radości <br />
+  <%= f.check_box :dysforia  %> Łatwo się irytuję, wpadam w złość, tracę kontrolę nad sobą <br />
+  <%= f.check_box :sen  %> Bezsenność, niespokojny sen, nie wysypiam się <br />
+  <%= f.check_box :depresja2  %> Przybicie, apatia, depresja <br />
+  <%= f.check_box :lek2  %> Utrzymujący się niepokój, zamartwianie się <br />
 
   <br/>
   <%= f.submit("Dalej") %>

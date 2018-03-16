@@ -1,21 +1,21 @@
 <div class="text-center"><h1> Ankieta witalności </h1>
 
-<div class="container"><h2 class="text-success"> Krok 5: Zdrowie układowe, cz.1 </h2>
-<div class="jumbotron">
+<div class="container"><h2 class="text-center text-success"> Krok 5: Zdrowie układowe, cz.1 </h2>
+<div class="jumbotron text-left">
 <h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 
 <%= form_for :zdrowie do |f| %>
-  Wypadanie włosów  <%= f.check_box :wlosy_wypadanie %><br />
-  Problemy z cerą <%= f.check_box :cera  %><br />
-  Defekty na skórze lub nieodpowiedni kolor skóry <%= f.check_box :skora_defekty  %><br />
-  Rozdwajające się i łamliwe paznokcie  <%= f.check_box :paznokcie %><br />
-  Suche, matowe, zniszczone włosy  <%= f.check_box :wlosy_zniszczone %><br />
-  Bolesne lub nieregularne miesiączki  <%= f.check_box :dysmenorrhea %><br />
-  Zimne ręce lub stopy <%= f.check_box :zimno %><br />
-  Problemy menopauzalne <%= f.check_box :menopauza %><br />
-  Problemy z trawieniem <%= f.check_box :trawienie %><br />
-  Nadmierne odbijanie lub gazy po posiłkach <%= f.check_box :gaz  %><br />
-  Zgaga lub wzdęcia po jedzeniu <%= f.check_box :trawienie %><br />
+  <%= f.check_box :wlosy_wypadanie %> Wypadanie włosów  <br />
+  <%= f.check_box :cera  %> Problemy z cerą <br />
+  <%= f.check_box :skora_defekty  %> Defekty na skórze lub nieodpowiedni kolor skóry <br />
+  <%= f.check_box :paznokcie %> Rozdwajające się i łamliwe paznokcie  <br />
+  <%= f.check_box :wlosy_zniszczone %> Suche, matowe, zniszczone włosy  <br />
+  <%= f.check_box :dysmenorrhea %> Bolesne lub nieregularne miesiączki  <br />
+  <%= f.check_box :zimno %> Zimne ręce lub stopy <br />
+  <%= f.check_box :menopauza %> Problemy menopauzalne <br />
+  <%= f.check_box :trawienie %> Problemy z trawieniem <br />
+  <%= f.check_box :gaz  %> Nadmierne odbijanie lub gazy po posiłkach <br />
+  <%= f.check_box :trawienie %> Zgaga lub wzdęcia po jedzeniu <br />
 
   <br />
   <%= f.submit("Dalej") %>

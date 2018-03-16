@@ -55,7 +55,7 @@ protect_from_forgery with: :exception
       redirect_to ankieta_path if $record == nil || $record.empty? || $i != 4
       $record.reverse_merge!(params["zdrowie"])
       $parametry = {pokarmowy: 10, oczyszczanie: 10, energia: 10, ruchu: 10, gruczolowy: 10, moczowy: 10, oddechowy: 10, immune: 10, nerwowy: 10, kardio: 10, watroba: 10 }
-    
+
     end
 
 

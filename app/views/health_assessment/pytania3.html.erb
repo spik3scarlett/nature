@@ -1,20 +1,20 @@
 <div class="text-center"><h1> Ankieta witalności </h1>
 
-<div class="container"><h2 class="text-success"> Krok 3: Styl życia i dieta </h2>
-<div class="jumbotron">
+<div class="container"><h2 class="text-center text-success"> Krok 3: Styl życia i dieta </h2>
+<div class="jumbotron text-left">
 <h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 
 <%= form_for :zdrowie do |f| %>
-  Niewystarczająca aktywność fizyczna, siedzący tryb życia <%= f.check_box :aktywnosc %><br />
-  Mniej niż 3 porcje warzyw lub owoców dziennie <%= f.check_box :owoce  %><br />
-  Pociąg do słodyczy <%= f.check_box :cukier %><br />
-  Nadużywanie alkoholu <%= f.check_box :alkohol %><br />
-  Często białe pieczywo, makarony, potrawy mączne <%= f.check_box :maka %><br />
-  Częste spożywanie czerwonego mięsa <%= f.check_box :mieso %><br />
-  Nadmiar nabiału w diecie <%= f.check_box :nabial %><br />
-  Pokarmy tłuste lub smażone <%= f.check_box :tłuszcz %><br />
-  Trudności w utrzymaniu prawidłowej wagi <%= f.check_box :waga %><br />
-  Nieprzestrzeganie diety <%= f.check_box :cukier %><br />
+<%= f.check_box :aktywnosc %>  Niewystarczająca aktywność fizyczna, siedzący tryb życia <br />
+<%= f.check_box :owoce  %>  Mniej niż 3 porcje warzyw lub owoców dziennie <br />
+<%= f.check_box :cukier %>  Pociąg do słodyczy <br />
+<%= f.check_box :alkohol %>  Nadużywanie alkoholu <br />
+<%= f.check_box :maka %>  Często białe pieczywo, makarony, potrawy mączne <br />
+<%= f.check_box :mieso %>  Częste spożywanie czerwonego mięsa <br />
+<%= f.check_box :nabial %>  Nadmiar nabiału w diecie <br />
+<%= f.check_box :tłuszcz %>  Pokarmy tłuste lub smażone <br />
+<%= f.check_box :waga %>  Trudności w utrzymaniu prawidłowej wagi <br />
+<%= f.check_box :cukier %>  Nieprzestrzeganie diety <br />
 
 <br/>
 

@@ -1,20 +1,20 @@
 <div class="text-center"><h1> Ankieta witalności </h1>
 
-<div class="container"><h2 class="text-success"> Krok 2: Środowisko, leki, chemia </h2>
-<div class="jumbotron">
+<div class="container"><h2 class="text-center text-success"> Krok 2: Środowisko, leki, chemia </h2>
+<div class="jumbotron text-left">
 <h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 
 <%= form_for :zdrowie do |f| %>
-  Palenie  papierosów <%= f.check_box :tyton %><br />
-  Smog, zanieczyszczenia powietrza, wody... <%= f.check_box :smog  %><br />
-  Często biorę leki bez recepty, np. przeciwbólowe <%= f.check_box :otc  %><br />
-  Niedawno zakończone antybiotyki <%= f.check_box :atb  %><br />
-  Przewlekle biorę leki na receptę <%= f.check_box :rx  %><br/>
-  Chlorowana woda do picia <%= f.check_box :woda  %><br />
-  Używam regularnie środków do czyszczenia ze sklepu <%= f.check_box :cleaners  %><br />
-  Nadwrażliwość na chemikalia, artykuły spożywcze <%= f.check_box :chemia  %><br />
-  Alergia na pokarmy <%= f.check_box :alergia %><br />
-  Alergia na substancje w powietrzu <%= f.check_box :wziewne %><br />
+<%= f.check_box :tyton %>  Palenie  papierosów <br />
+<%= f.check_box :smog  %>  Smog, zanieczyszczenia powietrza, wody... <br />
+<%= f.check_box :otc  %>  Często biorę leki bez recepty, np. przeciwbólowe <br />
+<%= f.check_box :atb  %>  Niedawno zakończone antybiotyki <br />
+<%= f.check_box :rx  %>  Przewlekle biorę leki na receptę <br/>
+<%= f.check_box :woda  %>  Chlorowana woda do picia <br />
+<%= f.check_box :cleaners  %>  Używam regularnie środków do czyszczenia ze sklepu <br />
+<%= f.check_box :chemia  %>  Nadwrażliwość na chemikalia, artykuły spożywcze <br />
+<%= f.check_box :alergia %>  Alergia na pokarmy <br />
+<%= f.check_box :wziewne %>  Alergia na substancje w powietrzu <br />
 
 
   <br/>

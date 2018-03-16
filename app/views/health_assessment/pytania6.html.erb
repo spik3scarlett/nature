@@ -1,22 +1,22 @@
 <div class="text-center"><h1> Ankieta witalności </h1>
 
-<div class="container"><h2 class="text-success"> Krok 6: Zdrowie układowe, cz. 2 </h2>
-<div class="jumbotron">
+<div class="container"><h2 class="text-center text-success"> Krok 6: Zdrowie układowe, cz. 2 </h2>
+<div class="jumbotron text-left">
 <h3>Zaznacz wszystkie, które cię dotyczą:</h3>
 
 <%= form_for :zdrowie do |f| %>
 
-  Problemy z oddychaniem, duszności <%= f.check_box :oddechy %><br />
-  Nadmiar flegmy <%= f.check_box :flegma %><br />
-  Problemy starości <%= f.check_box :starosc %><br />
-  Częste oddawanie moczu <%= f.check_box :czestomocz %><br />
-  Ból przy oddawaniu moczu   <%= f.check_box :dysuria %><br />
-  Wstawanie w nocy, by oddać mocz <%= f.check_box :nycturia %><br />
-  Obrzęki i bóle stawów, ból krzyża <%= f.check_box :stawy %><br />
-  Słabość mięśni <%= f.check_box :miesnie %><br />
-  Kruchość kości <%= f.check_box :kosci %><br />
-  Kurcze mięśniowe <%= f.check_box :kurcze %><br />
-  Nawracające grzybice <%= f.check_box :zakazenia %><br />
+  <%= f.check_box :oddechy %> Problemy z oddychaniem, duszności <br />
+  <%= f.check_box :flegma %> Nadmiar flegmy <br />
+  <%= f.check_box :starosc %> Problemy starości <br />
+  <%= f.check_box :czestomocz %> Częste oddawanie moczu <br />
+  <%= f.check_box :dysuria %> Ból przy oddawaniu moczu   <br />
+  <%= f.check_box :nycturia %> Wstawanie w nocy, by oddać mocz <br />
+  <%= f.check_box :stawy %> Obrzęki i bóle stawów, ból krzyża <br />
+  <%= f.check_box :miesnie %> Słabość mięśni <br />
+  <%= f.check_box :kosci %> Kruchość kości <br />
+  <%= f.check_box :kurcze %> Kurcze mięśniowe <br />
+  <%= f.check_box :zakazenia %> Nawracające grzybice <br />
   <br />
   <%= f.submit("Dalej") %>
 <% end %>
