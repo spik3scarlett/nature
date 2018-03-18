@@ -3,38 +3,28 @@
 <div class="m-3"><h1 class="text-center">Twoje wyniki personalnej ankiety witalności </h1></div>
 
 <div class="row">
-
   <div class="col-sm-6">
     <div class="container border border-secondary m-1 p-2">
-
-      <div class="row m-1"> <h2 class="text-success"> Układ pokarmowy </h4> </div>
+      <div class="row m-1"> <h2 class="text-success"> Układ pokarmowy </h2> </div>
       <div class="row m-1">
         <div class="col">
           <p class="text-muted">Można podejrzewać, że twój stan układu pokarmowego jest...</p>
-
-          <h3><%= wydaj_ocene(policz_procent($parametry[:pokarmowy],$absolute_counts[:pokarmowy])) %></h3>
+          <h3 class="text-success"><%= wydaj_ocene(policz_procent($parametry[:pokarmowy],$absolute_counts[:pokarmowy])) %></h3>
           <div class="progress">
-           <%= tag(:span, class: "progress-bar #{wstaw_kolor(policz_procent($parametry[:pokarmowy],$absolute_counts[:pokarmowy]))}", style: "width: #{policz_procent($parametry[:pokarmowy],$absolute_counts[:pokarmowy])}%") %>
-
-
+           <%= tag(:span, class: "progress-bar bg-success", style: "width: #{policz_procent($parametry[:pokarmowy],$absolute_counts[:pokarmowy])}%") %>
            <h5><small><%= policz_procent($parametry[:pokarmowy],$absolute_counts[:pokarmowy]) %>%</small></h5>
           </div>
-          <br/>
           <p class="text-muted"> Dobra kondycja układu pokarmowego jest niezbędna do prawidłowego przyswajania składników odżywczych, w tym witamin minerałów.
 Najważniejsze elementy tego układu to: przełyk, żołądek, jelita, wątroba i trzustka.
           </p>
-
+          <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
         </div>
         <div class="col">
           <%= image_tag("diagram-digestive.png", :alt => "układ pokarmowy", class: 'img-fluid float-right') %>
         </div>
       </div>
-        <div class="row m-1 p-1">
-          <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
-        </div>
-      </div>
     </div>
-
+  </div>
 
   <div class="col-sm-6">
     <div class="container border border-secondary m-1 p-2">
@@ -42,23 +32,19 @@ Najważniejsze elementy tego układu to: przełyk, żołądek, jelita, wątroba 
       <div class="row m-1">
         <div class="col">
           <p class="text-muted">Można podejrzewać, że twój stan energii jest...</p>
-          <h3><%= wydaj_ocene(policz_procent($parametry[:energia],$absolute_counts[:energia])) %></h3>
+          <h3 class="text-success"><%= wydaj_ocene(policz_procent($parametry[:energia],$absolute_counts[:energia])) %></h3>
           <div class="progress">
-           <%= tag(:span, class: "progress-bar #{wstaw_kolor(policz_procent($parametry[:energia],$absolute_counts[:energia]))}", style: "width: #{policz_procent($parametry[:energia],$absolute_counts[:energia])}%") %>
+           <%= tag(:span, class: "progress-bar bg-success", style: "width: #{policz_procent($parametry[:energia],$absolute_counts[:energia])}%") %>
            <h5><small><%= policz_procent($parametry[:energia],$absolute_counts[:energia]) %>%</small></h5>
           </div>
-          <br/>
           <p class="text-muted">Osłabiony organizm nie jest w stanie sprostać wymaganiom wpółczesnego świata.
 Zmęczenie, senność, złe samopoczucie to nie powinna być Twoja codzienność.
           </p>
-
+          <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
         </div>
         <div class="col">
           <%= image_tag("diagram-body_composition.png", :alt => "układ pokarmowy", class: 'img-fluid float-right') %>
         </div>
-      </div>
-      <div class="row m-1 p-1">
-        <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
       </div>
     </div>
   </div>
@@ -71,23 +57,19 @@ Zmęczenie, senność, złe samopoczucie to nie powinna być Twoja codzienność
         <div class="row m-1">
           <div class="col">
             <p class="text-muted">Można podejrzewać, że twój stan układu krążenia jest...</p>
-            <h3><%= wydaj_ocene(policz_procent($parametry[:kardio],$absolute_counts[:kardio])) %></h3>
+            <h3 class="text-success"><%= wydaj_ocene(policz_procent($parametry[:kardio],$absolute_counts[:kardio])) %></h3>
             <div class="progress">
-             <%= tag(:span, class: "progress-bar #{wstaw_kolor(policz_procent($parametry[:kardio],$absolute_counts[:kardio]))}", style: "width: #{policz_procent($parametry[:kardio],$absolute_counts[:kardio])}%") %>
+             <%= tag(:span, class: "progress-bar bg-success", style: "width: #{policz_procent($parametry[:kardio],$absolute_counts[:kardio])}%") %>
              <h5><small><%= policz_procent($parametry[:kardio],$absolute_counts[:kardio]) %>%</small></h5>
             </div>
-            <br/>
             <p class="text-muted"> Prawdopobnie najważniejszy układ Twojego organizmu odpowiadający za transport tlenu i składników odżywczych.
 Najważniejsze elementy układu to: serce, tętnice, żyły, naczynia limfatyczne i mikrokrążenie (naczynia włosowate).
             </p>
-
+            <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
           </div>
           <div class="col">
             <%= image_tag("diagram-circulatory.png", :alt => "układ krążenia", class: 'img-fluid float-right') %>
           </div>
-        </div>
-        <div class="row m-1 p-1">
-          <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
         </div>
       </div>
     </div>
@@ -98,22 +80,18 @@ Najważniejsze elementy układu to: serce, tętnice, żyły, naczynia limfatyczn
         <div class="row m-1">
           <div class="col">
             <p class="text-muted">Można podejrzewać, że twój stan układu oddechowego jest...</p>
-            <h3><%= wydaj_ocene(policz_procent($parametry[:oddechowy],$absolute_counts[:oddechowy])) %></h3>
+            <h3 class="text-success"><%= wydaj_ocene(policz_procent($parametry[:oddechowy],$absolute_counts[:oddechowy])) %></h3>
             <div class="progress">
-             <%= tag(:span, class: "progress-bar #{wstaw_kolor(policz_procent($parametry[:oddechowy],$absolute_counts[:oddechowy]))}", style: "width: #{policz_procent($parametry[:oddechowy],$absolute_counts[:oddechowy])}%") %>
+             <%= tag(:span, class: "progress-bar bg-success", style: "width: #{policz_procent($parametry[:oddechowy],$absolute_counts[:oddechowy])}%") %>
              <h5><small><%= policz_procent($parametry[:oddechowy],$absolute_counts[:oddechowy]) %>%</small></h5>
             </div>
-            <br/>
             <p class="text-muted">Oddychanie to najważniejsza funkcja ludzkiego organizmu. Coraz trudniej zachować układ oddechowy w dobrej kondycji. Otaczające nas powietrze jest pełne spalin i innych zanieczyszczeń.
             </p>
-
+            <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
           </div>
           <div class="col">
             <%= image_tag("diagram-respiratory.png", :alt => "układ oddechowy", class: 'img-fluid float-right') %>
           </div>
-        </div>
-        <div class="row m-1 p-1">
-          <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
         </div>
       </div>
     </div>
@@ -126,22 +104,18 @@ Najważniejsze elementy układu to: serce, tętnice, żyły, naczynia limfatyczn
       <div class="row m-1">
         <div class="col">
           <p class="text-muted">Można podejrzewać, że twój stan układu moczowego  jest...</p>
-          <h3><%= wydaj_ocene(policz_procent($parametry[:moczowy],$absolute_counts[:moczowy])) %></h3>
+          <h3 class="text-success"><%= wydaj_ocene(policz_procent($parametry[:moczowy],$absolute_counts[:moczowy])) %></h3>
           <div class="progress">
-           <%= tag(:span, class: "progress-bar #{wstaw_kolor(policz_procent($parametry[:moczowy],$absolute_counts[:moczowy]))}", style: "width: #{policz_procent($parametry[:moczowy],$absolute_counts[:moczowy])}%") %>
+           <%= tag(:span, class: "progress-bar bg-success", style: "width: #{policz_procent($parametry[:moczowy],$absolute_counts[:moczowy])}%") %>
            <h5><small><%= policz_procent($parametry[:moczowy],$absolute_counts[:moczowy]) %>%</small></h5>
           </div>
-          <br/>
           <p class="text-muted"> Układ moczowy pozwala pozbyć się z organizmu niebiezpiecznych toksyn i szkodliwych produktów przemiany materii.
           </p>
-
+          <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
         </div>
         <div class="col">
           <%= image_tag("diagram-urinary.png", :alt => "układ moczowy", class: 'img-fluid float-right') %>
         </div>
-      </div>
-      <div class="row m-1 p-1">
-        <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
       </div>
     </div>
   </div>
@@ -152,20 +126,17 @@ Najważniejsze elementy układu to: serce, tętnice, żyły, naczynia limfatyczn
       <div class="row m-1">
         <div class="col">
           <p class="text-muted">Można podejrzewać, że twój stan układu hormonalnego jest...</p>
-          <h3><%= wydaj_ocene(policz_procent($parametry[:hormonalny],$absolute_counts[:hormonalny])) %></h3>
+          <h3 class="text-success"><%= wydaj_ocene(policz_procent($parametry[:hormonalny],$absolute_counts[:hormonalny])) %></h3>
           <div class="progress">
-           <%= tag(:span, class: "progress-bar #{wstaw_kolor(policz_procent($parametry[:hormonalny],$absolute_counts[:hormonalny]))}", style: "width: #{policz_procent($parametry[:hormonalny],$absolute_counts[:hormonalny])}%") %>
+           <%= tag(:span, class: "progress-bar bg-success", style: "width: #{policz_procent($parametry[:hormonalny],$absolute_counts[:hormonalny])}%") %>
            <h5><small><%= policz_procent($parametry[:hormonalny],$absolute_counts[:hormonalny]) %>%</small></h5>
           </div>
-          <br/>
           <p class="text-muted">Układ hormonalny zapewnia wewnętrzną komunikację między narządami, która reguluje szeroko pojęty metabolizm, wzrost i dojrzewanie, instynkty i emocje, a także funkcje seksualne.</p>
+          <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
         </div>
         <div class="col">
           <%= image_tag("diagram-glandular.png", :alt => "układ hormonalny", class: 'img-fluid float-right') %>
         </div>
-      </div>
-      <div class="row m-1 p-1">
-        <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
       </div>
     </div>
   </div>
@@ -178,22 +149,18 @@ Najważniejsze elementy układu to: serce, tętnice, żyły, naczynia limfatyczn
       <div class="row m-1">
         <div class="col">
           <p class="text-muted">Można podejrzewać, że twój stan układu nerwowego jest...</p>
-          <h3><%= wydaj_ocene(policz_procent($parametry[:nerwowy],$absolute_counts[:nerwowy])) %></h3>
+          <h3 class="text-success"><%= wydaj_ocene(policz_procent($parametry[:nerwowy],$absolute_counts[:nerwowy])) %></h3>
           <div class="progress">
-           <%= tag(:span, class: "progress-bar #{wstaw_kolor(policz_procent($parametry[:nerwowy],$absolute_counts[:nerwowy]))}", style: "width: #{policz_procent($parametry[:nerwowy],$absolute_counts[:nerwowy])}%") %>
+           <%= tag(:span, class: "progress-bar bg-success", style: "width: #{policz_procent($parametry[:nerwowy],$absolute_counts[:nerwowy])}%") %>
            <h5><small><%= policz_procent($parametry[:nerwowy],$absolute_counts[:nerwowy]) %>%</small></h5>
           </div>
-          <br/>
           <p class="text-muted"> Zdrowy układ nerwowy to gwarancja odpowiedniego reagowania na bodźce napływające z otoczenia. Mózg i nerwy odpowiadają za sprawne współdziałanie wszystkich organów ze sobą i dostosowywanie się do środowiska.
           </p>
-
+          <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
         </div>
         <div class="col">
           <%= image_tag("diagram-nervous.png", :alt => "układ nerwowy", class: 'img-fluid float-right') %>
         </div>
-      </div>
-      <div class="row m-1 p-1">
-        <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
       </div>
     </div>
   </div>
@@ -204,22 +171,18 @@ Najważniejsze elementy układu to: serce, tętnice, żyły, naczynia limfatyczn
       <div class="row m-1">
         <div class="col">
           <p class="text-muted">Można podejrzewać, że twój stan układu mięśniowo-szkieletowego jest...</p>
-          <h3><%= wydaj_ocene(policz_procent($parametry[:ruchu],$absolute_counts[:ruchu])) %></h3>
+          <h3 class="text-success"><%= wydaj_ocene(policz_procent($parametry[:ruchu],$absolute_counts[:ruchu])) %></h3>
           <div class="progress">
-           <%= tag(:span, class: "progress-bar #{wstaw_kolor(policz_procent($parametry[:ruchu],$absolute_counts[:ruchu]))}", style: "width: #{policz_procent($parametry[:ruchu],$absolute_counts[:ruchu])}%") %>
+           <%= tag(:span, class: "progress-bar bg-success", style: "width: #{policz_procent($parametry[:ruchu],$absolute_counts[:ruchu])}%") %>
            <h5><small><%= policz_procent($parametry[:ruchu],$absolute_counts[:ruchu]) %>%</small></h5>
           </div>
-          <br/>
           <p class="text-muted"> Zdrowe mięśnie, kości i stawy to gwaracja mobilności i odporności na kontuzje. Dbaj o nie w każdym wieku, nawet jeśli jeszcze nie bolą. Ruch to zdrowie!
           </p>
-
+          <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
         </div>
         <div class="col">
           <%= image_tag("diagram-structural.png", :alt => "układ mięśniowo-szkieletowy", class: 'img-fluid float-right') %>
         </div>
-      </div>
-      <div class="row m-1 p-1">
-        <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
       </div>
     </div>
   </div>
@@ -232,22 +195,18 @@ Najważniejsze elementy układu to: serce, tętnice, żyły, naczynia limfatyczn
       <div class="row m-1">
         <div class="col">
           <p class="text-muted">Można podejrzewać, że twój stan układu odpornościowego jest...</p>
-          <h3><%= wydaj_ocene(policz_procent($parametry[:immune],$absolute_counts[:immune])) %></h3>
+          <h3 class="text-success"><%= wydaj_ocene(policz_procent($parametry[:immune],$absolute_counts[:immune])) %></h3>
           <div class="progress">
-           <%= tag(:span, class: "progress-bar #{wstaw_kolor(policz_procent($parametry[:immune],$absolute_counts[:immune]))}", style: "width: #{policz_procent($parametry[:immune],$absolute_counts[:immune])}%") %>
+           <%= tag(:span, class: "progress-bar bg-success", style: "width: #{policz_procent($parametry[:immune],$absolute_counts[:immune])}%") %>
            <h5><small><%= policz_procent($parametry[:immune],$absolute_counts[:immune]) %>%</small></h5>
           </div>
-          <br/>
           <p class="text-muted"> Nikomu nie trzeba tłumaczyć, jak ważne jest utrzymanie odporności w dobrej kondycji. Nikt przecież nie chce chorować.
           </p>
-
+          <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
         </div>
         <div class="col">
           <%= image_tag("diagram-immune.png", :alt => "układ odpornościowy", class: 'img-fluid float-right') %>
         </div>
-      </div>
-      <div class="row m-1 p-1">
-        <a href="https://e-naturessunshine.com/shop/categories/1,0,suplementy.html" class="btn btn-success" role="button">Zobacz rekomendowane produkty</a>
       </div>
     </div>
   </div>

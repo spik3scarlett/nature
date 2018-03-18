@@ -54,13 +54,9 @@ protect_from_forgery with: :exception
     def wynik
       redirect_to ankieta_path if $record == nil || $record.empty? || $i != 4
       $record.reverse_merge!(params["zdrowie"])
-      $parametry = {pokarmowy: 10, oczyszczanie: 10, energia: 10, ruchu: 10, gruczolowy: 10, moczowy: 10, oddechowy: 10, immune: 10, nerwowy: 10, kardio: 10, watroba: 10 }
+      $parametry = {pokarmowy: 36, energia: 30, ruchu: 15, hormonalny: 24, moczowy: 17, oddechowy: 18, immune: 22, nerwowy: 38, kardio: 26 }
+      $absolute_counts = {pokarmowy: 36, energia: 30, ruchu: 15, hormonalny: 24, moczowy: 17, oddechowy: 18, immune: 22, nerwowy: 38, kardio: 26 }
 
     end
-
-
-
-
-
 
 end
