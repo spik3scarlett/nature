@@ -12,14 +12,13 @@ module HealthAssessmentHelper
         $ocena = "BARDZO OSŁABIONY"
       end
   end
+
   def wstaw_kolor(a)
     if a >=80
-      "bg-primary"
-    elsif a >= 60 && a <80
       "bg-success"
-    elsif a >= 40 && a <60
-      "bg-secondary"
-    elsif a >= 20 && a <40
+    elsif a >= 50 && a <80
+      "bg-info"
+    elsif a >= 30 && a <50
       "bg-warning"
     else
       "bg-danger"
@@ -28,7 +27,11 @@ module HealthAssessmentHelper
   end
 
   def policz_procent(a, b)
-    return ((a*100)/b).floor
+    if ((a*100)/b) > 5
+      return ((a*100)/b).floor
+    else
+      return 5
+    end
   end
 
   def przelicz_parametry
