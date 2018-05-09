@@ -16,9 +16,11 @@ module HealthAssessmentHelper
   def wstaw_kolor(a)
     if a >=80
       "bg-success"
-    elsif a >= 50 && a <80
+    elsif a >= 60 && a <80
+      "bg-primary"
+    elsif a >= 40 && a <60
       "bg-info"
-    elsif a >= 30 && a <50
+    elsif a >= 20 && a <40
       "bg-warning"
     else
       "bg-danger"
